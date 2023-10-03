@@ -1,0 +1,79 @@
+.carrossel {
+    max-width: 100%;
+    margin-top: 16px;
+    position: relative;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.container h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 28px;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.67%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.card {
+    margin-bottom: 12px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+section h2 {
+    margin-bottom: 32px;
+}
+
+footer {
+    margin-top: 56px;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .destinos {
+        display: block;
+    }
+
+    .destinos .card {
+        margin-bottom: 32px;
+    }
+
+    header div.container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .destaque .card a {
+        font-size: 1.5em;
+    }
+
+    .destinos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
